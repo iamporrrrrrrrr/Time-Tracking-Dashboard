@@ -21,7 +21,7 @@ async function handleClick(timeframeNo){
     }
 }
 
-handleClick(0);
+
 
 timeframes.forEach((e) => {
     console.log(e);
@@ -32,3 +32,5 @@ timeframes.forEach((e) => {
         handleClick(e.dataset.type);
     });
 });
+
+handleClick(0);
