@@ -21,6 +21,7 @@ async function handleClick(timeframeNo){
     }
 }
 
+handleClick(0);
 
 timeframes.forEach((e) => {
     console.log(e);
@@ -31,7 +32,3 @@ timeframes.forEach((e) => {
         handleClick(e.dataset.type);
     });
 });
-
-document.getElementById('daily').addEventListener("click",handleClick(0));
-document.getElementById('weekly').addEventListener("click",handleClick(1));
-document.getElementById('monthly').addEventListener('click',handleClick(2));
